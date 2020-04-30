@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background-image: linear-gradient(125deg, #ad5389, #3c1053);
+  color: whitesmoke;
+  font-family: "Baloo Paaji 2", cursive;
+  min-height: 100vh;
+  outline: none;
+}
+
+header {
+  font-size: 1.5rem;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: whitesmoke;
+}
+
+form button {
+  color: #c06c84;
+  background: whitesmoke;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+form button:hover {
+  background: #c06c84;
+  color: whitesmoke;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo {
+  margin: 0.5rem;
+  background: whitesmoke;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.todo li {
+  flex: 1;
+}
+
+.trash-btn,
+.complete-btn {
+  background: #fc4a1a;
+  color: whitesmoke;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: #ad5389;
+}
+
+.complete-btn {
+  background: #29a189;
+}
+
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+
+.trash-btn {
+  margin: 4px;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.3;
+}
+
+.fall {
+  transform: translateY(30rem) rotateZ(20deg);
+  opacity: 0.1;
+}
